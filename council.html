@@ -179,17 +179,18 @@ Paying Guest Accommodations For Boy Student,
 
         /* Style for the individual carousel slides */
         .carousel img {
-            max-width: 100%;
+            max-width: 80%;
+            max-height: 80%;
             height: auto;
             margin: 0 auto;
         }
 
         /* Style for the carousel navigation arrows (optional) */
         .slick-prev,
-        .slick-next {
+        .slick-next /*{
             font-size: 24px;
             color: #fff;
-        }
+        }*/
 
         /* Style for the carousel dots (optional) */
         .slick-dots {
@@ -215,6 +216,27 @@ Paying Guest Accommodations For Boy Student,
             object-fit: cover;
             /* This property will ensure the image fills the container without distortion */
         }
+        .single-box {
+        width: 300px; /* Set the width of the container */
+        height: 300px; /* Set the height of the container */
+        border: 1px solid #ccc; /* Add a border for visualization (optional) */
+        overflow: hidden; /* Hide any overflow if the image exceeds the container */
+        }
+
+        .single-box img {
+        max-width: 100%; /* Constrain the image's width to the width of the container */
+        max-height: 100%; /* Constrain the image's height to the height of the container */
+        display: block; /* Remove any extra space below the image */
+        margin: 0 auto; /* Center the image horizontally (optional) */
+        }
+
+        .text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align children to the center horizontally */
+  text-align: center; 
+}
+
     </style>
 </head>
 
@@ -250,13 +272,13 @@ Paying Guest Accommodations For Boy Student,
             <div class="carousel-container">
                 <div class="carousel">
                     <div class="image-container">
-                        <img src="1d61860a7cc9b1c3fe00fa140b30c246.jpg" alt="Image 1">
+                        <img src="AC4 Animus.jpg" alt="Image 1">
                     </div>
                     <div class="image-container">
-                        <img src="Fbx3ci.jpg" alt="Image 2">
+                        <img src="ACB Animus.png" alt="Image 2">
                     </div>
                     <div class="image-container">
-                        <img src="Screenshot 2023-09-16 192027.png" alt="Image 3">
+                        <img src="ACO Animus.png" alt="Image 3">
                     </div>
                 </div>
 
@@ -295,99 +317,192 @@ Paying Guest Accommodations For Boy Student,
         <div class="head-line">
             <h2>General Secretary</h2>
         </div>
-        <div class="single-box">
-            <h2>General Secretary</h2>
-            <p>Some text here...</p>
+        <div class="box-container">
+            <div class="single-box">
+                <img src="assets/images/council_members/gensec_harsh.png" alt="General Secretary">
+            </div>
+            <div class="text-box">
+                <h3>Harsh Kumar Garg</h3>
+                <p>General Secretary</p>
+            </div>
         </div>
-
+        
         <div class="head-line">
             <h2>Cultural Council</h2>
         </div>
-        <div class="single-box">
-            <h2>Head_1</h2>
-            <p>Some text here...</p>
+        <div class="box-container">
+            <div class="single-box">
+                <img src="assets/images/council_members/messco_ramnarayan.jpg2" alt="Cultural Councillor">
+            </div>
+            <div class="text-box">
+                <h3>Kunal Patidar</h3>
+                <p>Cultural Councillor</p>
+            </div>
         </div>
         <div class="animated-block">
-            <div class="block"> <!-- Block 1 -->
-                <h2>Head 1</h2>
-                <p>Some text here...</p>
+           <div class="box-container">
+                <div class="single-box">
+                    <img src="assets/images/council_members/cultsecy_harshit.jpg" alt="Cultural Secretary">
+                </div>
+                <div class="text-box">
+                    <h3>Harshit Nimbawat</h3>
+                    <p>Cultural Secretary</p>
+                </div>
             </div>
-            <div class="block"> <!-- Block 2 -->
-                <h2>Head 2</h2>
-                <p>Some text here...</p>
+            <div class="box-container">
+                <div class="single-box">
+                    <img src="assets/images/council_members/cultsecy_yuvraj.jpg" alt="Cultural Secretary">
+                </div>
+                <div class="text-box">
+                    <h3>Yuvraj Khandelwal</h3>
+                    <p>Cultural Secretary</p>
+                </div>
             </div>
         </div>
-
-
+        
         <div class="head-line">
             <h2>Web & LAN Council</h2>
         </div>
-        <div class="single-box">
-            <h2>Head_1</h2>
-            <p>Some text here...</p>
-        </div>
-        <div class="animated-block">
-            <div class="block"> <!-- Block 1 -->
-                <h2>Head 1</h2>
-                <p>Some text here...</p>
+        <!-- <div class="single-box"> -->
+            <!-- <h2>Head_1</h2> -->
+            <!-- <p>Some text here...</p> -->
+            <div class="box-container">
+                <div class="single-box">
+                    <img src="navyansh.png" alt="System Admin">
+                </div>
+                <div class="text-box">
+                    <h3>Navyansh Mahla</h3>
+                    <p>System Admin</p>
+                </div>
             </div>
-            <div class="block"> <!-- Block 2 -->
-                <h2>Head 2</h2>
-                <p>Some text here...</p>
+        <!-- </div> -->
+        <div class="animated-block">
+            <div class="box-container">
+                <div class="single-box">
+                    <img src="assets/images/council_members/websecy_karthick.jpg" alt="Web Secretary">
+                </div>
+                <div class="text-box">
+                    <h3>Karthick Narayanan</h3>
+                    <p>Web Secretary</p>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="single-box">
+                    <img src="cherryboi.png" alt="Web Secretary">
+                </div>
+                <div class="text-box">
+                    <h3>Cherish</h3>
+                    <p>Web Secretary</p>
+                </div>
             </div>
         </div>
 
         <div class="head-line">
             <h2>Maintenance Council</h2>
         </div>
-        <div class="single-box">
-            <h2>Head_1</h2>
-            <p>Some text here...</p>
+        <div class="box-container">
+            <div class="single-box">
+                <img src="assets/images/council_members/maintco_sujeet.jpg" alt="Maintenance Councillor">
+            </div>
+            <div class="text-box">
+                <h3>Sujeet Mehta</h3>
+                <p>Maintenance Councillor</p>
+            </div>
         </div>
         <div class="animated-block">
-            <div class="block"> <!-- Block 1 -->
-                <h2>Head 1</h2>
-                <p>Some text here...</p>
-            </div>
-            <div class="block"> <!-- Block 2 -->
-                <h2>Head 2</h2>
-                <p>Some text here...</p>
+            <div class="box-container">
+                <div class="single-box">
+                    <img src="assets/images/council_members/maintsecy_abhay.jpg" alt="Maintenance Secretary">
+                </div>
+                <div class="text-box">
+                    <h3>Abhay Pratap Singh</h3>
+                    <p>Maintenance Secretary</p>
+                </div>
             </div>
         </div>
 
         <div class="head-line">
             <h2>Mess Council</h2>
         </div>
-        <div class="single-box">
-            <h2>Head_1</h2>
-            <p>Some text here...</p>
+        <div class="box-container">
+            <div class="single-box">
+                <img src="assets/images/council_members/messco_ramnarayan.jpg" alt="Mess Councillor">
+            </div>
+            <div class="text-box">
+                <h3>Ramnarayan</h3>
+                <p>Mess Councillor</p>
+            </div>
         </div>
         <div class="animated-block">
-            <div class="block"> <!-- Block 1 -->
-                <h2>Head 1</h2>
-                <p>Some text here...</p>
+           <div class="box-container">
+                <div class="single-box">
+                    <img src="assets/images/council_members/messsecy_aditya.jpeg" alt="Mess Secretary">
+                </div>
+                <div class="text-box">
+                    <h3>Aditya Vyas</h3>
+                    <p>Mess Secretary</p>
+                </div>
             </div>
-            <div class="block"> <!-- Block 2 -->
-                <h2>Head 2</h2>
-                <p>Some text here...</p>
+            <div class="box-container">
+                <div class="single-box">
+                    <img src="assets/images/council_members/messsecy_sourav.jpg" alt="Mess Secretary">
+                </div>
+                <div class="text-box">
+                    <h3>Sourav</h3>
+                    <p>Mess Secretary</p>
+                </div>
             </div>
         </div>
+
 
         <div class="head-line">
             <h2>Sports Council</h2>
         </div>
-        <div class="single-box">
-            <h2>Head_1</h2>
-            <p>Some text here...</p>
+        <div class="box-container">
+            <div class="single-box">
+                <img src="assets/images/council_members/messco_ramnarayan.jpg2" alt="Sports Councillor">
+            </div>
+            <div class="text-box">
+                <h3>Parag Ingle</h3>
+                <p>Sports Councillor</p>
+            </div>
         </div>
         <div class="animated-block">
-            <div class="block"> <!-- Block 1 -->
-                <h2>Head 1</h2>
-                <p>Some text here...</p>
+           <div class="box-container">
+                <div class="single-box">
+                    <img src="assets/images/council_members/sportsecy_priyanshu.jpg" alt="Sports Secretary">
+                </div>
+                <div class="text-box">
+                    <h3>Priyanshu Chaturvedi</h3>
+                    <p>Sports Secretary</p>
+                </div>
             </div>
-            <div class="block"> <!-- Block 2 -->
-                <h2>Head 2</h2>
-                <p>Some text here...</p>
+            <div class="box-container">
+                <div class="single-box">
+                    <img src="assets/images/council_members/sportsecy_harish.jpg" alt="Sports Secretary">
+                </div>
+                <div class="text-box">
+                    <h3>Harish chand</h3>
+                    <p>Sports Secretary</p>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="single-box">
+                    <img src="assets/images/council_members/sportsecy_anurag.jpg" alt="Sports Secretary">
+                </div>
+                <div class="text-box">
+                    <h3>Anurag Yadav</h3>
+                    <p>Sports Secretary</p>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="single-box">
+                    <img src="assets/images/council_members/sportsecy_shubham.png" alt="Sports Secretary">
+                </div>
+                <div class="text-box">
+                    <h3>Shubham Garg</h3>
+                    <p>Sports Secretary</p>
+                </div>
             </div>
         </div>
 
@@ -395,20 +510,45 @@ Paying Guest Accommodations For Boy Student,
         <div class="head-line">
             <h2>Tech Council</h2>
         </div>
-        <div class="single-box">
-            <h2>Head_1</h2>
-            <p>Some text here...</p>
+        <div class="box-container">
+            <div class="single-box">
+                <img src="assets/images/council_members/messco_ramnarayan.jpg2" alt="Tech Councillor">
+            </div>
+            <div class="text-box">
+                <h3>Hanish</h3>
+                <p>Tech Councillor</p>
+            </div>
         </div>
         <div class="animated-block">
-            <div class="block"> <!-- Block 1 -->
-                <h2>Head 1</h2>
-                <p>Some text here...</p>
+           <div class="box-container">
+                <div class="single-box">
+                    <img src="assets/images/council_members/tecchsecy_siddhant.jpeg" alt="Tech Secretary">
+                </div>
+                <div class="text-box">
+                    <h3>Siddhant Sapkal</h3>
+                    <p>Tech Secretary</p>
+                </div>
             </div>
-            <div class="block"> <!-- Block 2 -->
-                <h2>Head 2</h2>
-                <p>Some text here...</p>
+            <div class="box-container">
+                <div class="single-box">
+                    <img src="assets/images/council_members/techsecy_samarth.jpg" alt="Tech Secretary">
+                </div>
+                <div class="text-box">
+                    <h3>Samarth Sirsat</h3>
+                    <p>Tech Secretary</p>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="single-box">
+                    <img src="assets/images/council_members/techsecy_nihir.jpeg" alt="Tech Secretary">
+                </div>
+                <div class="text-box">
+                    <h3>Nihir Shah</h3>
+                    <p>Tech Secretary</p>
+                </div>
             </div>
         </div>
+
 
     </main>
 
@@ -419,12 +559,27 @@ Paying Guest Accommodations For Boy Student,
     <script>
         // Initialize the carousel
         $(document).ready(function () {
+        // Set autoplay interval (e.g., every 3 seconds)
+        var autoplayInterval = 3000; // in milliseconds
+
+        // Function to move to the next slide
+        function moveToNextSlide() {
+            $('.carousel').slick('slickNext');
+        }
+
+        // Start autoplay
+        setInterval(moveToNextSlide, autoplayInterval);
+        });
+
+         // Initialize the carousel
+        $(document).ready(function () {
             $('.carousel').slick({
                 dots: true, // Add navigation dots
                 infinite: true, // Infinite loop sliding
                 speed: 1000, // Transition speed in milliseconds
                 slidesToShow: 1, // Number of slides to show at a time
-                adaptiveHeight: true // Auto-detect height for the current slide
+                adaptiveHeight: true, // Auto-detect height for the current slide
+                prevArrow: null // Remove the "previous" button
             });
         });
     </script>
