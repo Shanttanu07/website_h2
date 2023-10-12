@@ -160,25 +160,26 @@ Paying Guest Accommodations For Boy Student,
             padding: 20px;
         }
 
-        body {
-            overflow-x: hidden;
-            /* Hide horizontal overflow */
-            white-space: nowrap;
-            /* Prevent line breaks within text */
-            overflow-wrap: break-word;
-            /* Allow word wrapping if necessary */
-        }
+        /* body { */
+        /* overflow-x: hidden; */
+        /* Hide horizontal overflow */
+        /* white-space: nowrap; */
+        /* Prevent line breaks within text */
+        /* overflow-wrap: break-word; */
+        /* Allow word wrapping if necessary */
+        /* } */
 
         /* Style for the carousel container */
         .carousel-container {
             text-align: center;
             margin-top: 20px;
+
         }
 
         /* Style for the individual carousel slides */
         .carousel img {
-            max-width: 80%;
-            max-height: 80%;
+            max-width: 30%;
+            max-height: 50%;
             height: auto;
             margin: 0 auto;
         }
@@ -254,6 +255,96 @@ Paying Guest Accommodations For Boy Student,
             height: 300px;
             /* Adjust the height as needed */
         }
+
+        .council-section {
+            text-align: center;
+            font-family: 'Rockwell', sans-serif;
+            /* Choose your desired aesthetic font */
+            padding: 20px;
+        }
+
+        .council-section h1,
+        .council-section p {
+            max-width: 80%;
+            /* Set the maximum width for text content */
+            margin: 0 auto;
+            /* Center the text content */
+            font-size: 1.2em;
+            /* Adjust font size for smaller screens */
+            text-align: left;
+            /* Align text to the left on smaller screens */
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5em;
+            }
+
+            .carousel-container {
+                margin-top: 10px;
+            }
+
+            .carousel img {
+                max-width: 80%;
+            }
+
+            .box-container {
+                max-width: 90%;
+            }
+
+            .box-container {
+                /* width: 100%; */
+                display: block;
+                /* Ensure full width on small screens */
+                text-align: center;
+                /* Center align text on small screens */
+                /* margin-bottom: 20px; */
+                /* Add some space between the boxes */
+            }
+
+            .single-box {
+                width: 80%;
+                /* Adjust the width of the image container */
+                margin: 0 auto;
+                /* Center the image */
+            }
+
+            .text-box {
+                text-align: center;
+                /* Center align text on small screens */
+            }
+
+            h3 {
+                font-size: 1.2em;
+                /* Adjust the font size for smaller screens */
+            }
+
+            p {
+                font-size: 1em;
+                /* Adjust the font size for smaller screens */
+            }
+        }
+
+        .single-box img:hover {
+            transform: scale(1.5);
+            transition: transform 0.15s ease-in-out;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer {
+            background-color: black;
+            /* Set the background color to black */
+            color: white;
+            /* Set the text color to white or any other desired color */
+            text-align: center;
+            /* Center-align the text */
+            padding: 10px;
+            /* Add some padding to the footer */
+        }
     </style>
 </head>
 
@@ -273,10 +364,10 @@ Paying Guest Accommodations For Boy Student,
                 <div class="logo_text2">TheWildOnes</div>
             </div>
             <ul class="menu" id="menu">
-                <li class="menu_items"><a href="index.html" class="menu_link">Home</a></li>
+                <li class="menu_items"><a href="#home" class="menu_link">Home</a></li>
                 <li class="menu_items"><a href="#about" class="menu_link">About</a></li>
                 <li class="menu_items"><a href="#council" class="menu_link">Know your Council</a></li>
-                
+                <li class="menu_items"><a href="#" class="menu_link">Gallery</a></li>
             </ul>
             <div class="nav_toggle" id="nav_toggle">
                 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -317,358 +408,363 @@ Paying Guest Accommodations For Boy Student,
                     </div>
                 </div>
 
-            </div>
-        </section>
-    </header>
-
-    <main>
-        <!-- Your "Know Your Council" content goes here -->
-        <h1>Know Your Council</h1>
-        <p>Welcome to the Know Your Council page. Here you can find information about our council members and their
-            roles.</p>
-        <!-- Head line -->
-        <div class="head-line">
-            <h2>HEAD</h2>
         </div>
-        <!-- Animated blocks under "HEAD" -->
-        <div class="animated-block">
+    </section>
+</header>
+
+<main>
+    <div class="council-section">
+        <!-- <h1>Know Your Council</h1>
+            <p>Welcome to the Know Your Council page. Here you can find information about our council members and their
+                roles.</p> -->
+    </div>
+    <div class="head-line">
+        <h2>HEAD</h2>
+    </div>
+    <div class="animated-block">
 
 
-            <div class="box-container">
-                <div class="custom-single-box"
-                    style="background-image: url('assets/images/council_members/assoc_warden.jpg');">
-                    <!-- Empty div used to create the background image -->
-                </div>
-                <div class="text-box">
-                    <h3>Prof. Zakir Hussain</h3>
-                    <p>Associate Warden</p>
-                </div>
+        <div class="box-container">
+            <div class="custom-single-box"
+                style="background-image: url('assets/images/council_members/assoc_warden.jpg');">
+                <!-- Empty div used to create the background image -->
             </div>
-
-
-        </div>
-        <div class="animated-block">
-            <div class="box-container">
-                <div class="custom-single-box"
-                    style="background-image: url('assets/images/council_members/warden.jpg');">
-                    <!-- Empty div used to create the background image -->
-                </div>
-                <div class="text-box">
-                    <h3>Prof. P J guruprasad
-                    </h3>
-                    <p> Warden</p>
-                </div>
+            <div class="text-box">
+                <h3>Prof. Zakir Hussain</h3>
+                <p>Associate Warden</p>
             </div>
         </div>
 
 
-        <!-- Single box below the two heads -->
-        <!-- <div class="single-box"> -->
-        <!-- <h2>Hall manager</h2> -->
+    </div>
+    <div class="animated-block">
+        <div class="box-container">
+            <div class="custom-single-box" style="background-image: url('assets/images/council_members/warden.jpg');">
+                <!-- Empty div used to create the background image -->
+            </div>
+            <div class="text-box">
+                <h3>Prof. P J guruprasad
+                </h3>
+                <p> Warden</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="single-box">
+        <img src="assets/images/council_members/hallmanager.jpg" alt="Cultural Councillor">
+    </div>
+    <div class="text-box">
+        <h3>Mr. Rohan Tarkar</h3>
+        <p>Hall Manager</p>
+    </div>
+
+
+    <div class="head-line">
+        <h2>General Secretary & Warden Nominee
+        </h2>
+    </div>
+    <div class="box-container">
         <div class="single-box">
-            <img src="assets/images/council_members/hallmanager.jpg" alt="Cultural Councillor">
+            <img src="assets/images/council_members/gensec_harsh.png" alt="General Secretary">
         </div>
         <div class="text-box">
-            <h3>Mr. Rohan Tarkar</h3>
-            <p>Hall Manager</p>
+            <h3>Harsh Kumar Garg</h3>
+            <p>General Secretary</p>
         </div>
-        <!-- </div> -->
-        <!-- ... (The rest of your content) ... -->
+    </div>
+    <br>
+    <br>
+    </div>
+    <div class="box-container">
+        <div class="single-box">
+            <img src="assets/images/council_members/vinayak.jpg" alt="General Secretary">
+        </div>
+        <div class="text-box">
+            <h3>Vinayak Srivastava </h3>
+            <p>Warden Nominee</p>
+        </div>
+    </div>
 
-        <div class="head-line">
-            <h2>General Secretary & Warden Nominee
-            </h2>
+    <div class="head-line">
+        <h2>Cultural Council</h2>
+    </div>
+    <div class="box-container">
+        <div class="single-box">
+            <img src="assets/images/council_members/kunal.png" alt="Cultural Councillor">
         </div>
+        <div class="text-box">
+            <h3>Kunal Patidar</h3>
+            <p>Cultural Councillor</p>
+        </div>
+    </div>
+    <div class="animated-block">
         <div class="box-container">
             <div class="single-box">
-                <img src="assets/images/council_members/gensec_harsh.png" alt="General Secretary">
+                <img src="assets/images/council_members/cultsecy_harshit.jpg" alt="Cultural Secretary">
             </div>
             <div class="text-box">
-                <h3>Harsh Kumar Garg</h3>
-                <p>General Secretary</p>
+                <h3>Harshit Nimbawat</h3>
+                <p>Cultural Secretary</p>
             </div>
         </div>
-        <br>
-        <br>
+
+    </div>
+    <div class="box-container">
+        <div class="single-box">
+            <img src="assets/images/council_members/cultsecy_yuvraj.jpg" alt="Cultural Secretary">
         </div>
+        <div class="text-box">
+            <h3>Yuvraj Khandelwal</h3>
+            <p>Cultural Secretary</p>
+        </div>
+    </div>
+
+    <div class="head-line">
+        <h2>Web & LAN Council</h2>
+    </div>
+    <div class="box-container">
+        <div class="single-box">
+            <img src="assets/images/council_members/sysad_navyansh.jpg" alt="System Admin">
+        </div>
+        <div class="text-box">
+            <h3>Navyansh Mahla</h3>
+            <p>System Admin</p>
+        </div>
+    </div>
+    <div class="animated-block">
         <div class="box-container">
             <div class="single-box">
-                <img src="assets/images/council_members/vinayak.jpg" alt="General Secretary">
+                <img src="assets/images/council_members/websecy_karthick.jpg" alt="Web Secretary">
             </div>
             <div class="text-box">
-                <h3>Vinayak Srivastava </h3>
-                <p>Warden Nominee</p>
+                <h3>Karthick Narayanan</h3>
+                <p>Web Secretary</p>
             </div>
         </div>
 
-        <div class="head-line">
-            <h2>Cultural Council</h2>
+    </div>
+    <div class="box-container">
+        <div class="single-box">
+            <img src="assets/images/council_members/cherryboi.jpg" alt="Web Secretary">
         </div>
+        <div class="text-box">
+            <h3>Cherish</h3>
+            <p>Web Secretary</p>
+        </div>
+    </div>
+
+
+    <div class="head-line">
+        <h2>Maintenance Council</h2>
+    </div>
+    <div class="box-container">
+        <div class="single-box">
+            <img src="assets/images/council_members/maintco_sujeet.jpg" alt="Maintenance Councillor">
+        </div>
+        <div class="text-box">
+            <h3>Sujeet Mehta</h3>
+            <p>Maintenance Councillor</p>
+        </div>
+    </div>
+    <div class="animated-block">
         <div class="box-container">
             <div class="single-box">
-                <img src="assets/images/council_members/kunal.png" alt="Cultural Councillor">
+                <img src="assets/images/council_members/maintsecy_abhay.jpg" alt="Maintenance Secretary">
             </div>
             <div class="text-box">
-                <h3>Kunal Patidar</h3>
-                <p>Cultural Councillor</p>
+                <h3>Abhay Pratap Singh</h3>
+                <p>Maintenance Secretary</p>
             </div>
         </div>
-        <div class="animated-block">
-            <div class="box-container">
-                <div class="single-box">
-                    <img src="assets/images/council_members/cultsecy_harshit.jpg" alt="Cultural Secretary">
-                </div>
-                <div class="text-box">
-                    <h3>Harshit Nimbawat</h3>
-                    <p>Cultural Secretary</p>
-                </div>
-            </div>
-            <div class="box-container">
-                <div class="single-box">
-                    <img src="assets/images/council_members/cultsecy_yuvraj.jpg" alt="Cultural Secretary">
-                </div>
-                <div class="text-box">
-                    <h3>Yuvraj Khandelwal</h3>
-                    <p>Cultural Secretary</p>
-                </div>
-            </div>
-        </div>
+    </div>
 
-        <div class="head-line">
-            <h2>Web & LAN Council</h2>
+    <div class="head-line">
+        <h2>Mess Council</h2>
+    </div>
+    <div class="box-container">
+        <div class="single-box">
+            <img src="assets/images/council_members/messco_ramnarayan.jpg" alt="Mess Councillor">
         </div>
+        <div class="text-box">
+            <h3>Ramnarayan</h3>
+            <p>Mess Councillor</p>
+        </div>
+    </div>
+    <div class="animated-block">
         <div class="box-container">
             <div class="single-box">
-                <img src="assets/images/council_members/sysad_navyansh.jpg" alt="System Admin">
+                <img src="assets/images/council_members/messsecy_aditya.jpeg" alt="Mess Secretary">
             </div>
             <div class="text-box">
-                <h3>Navyansh Mahla</h3>
-                <p>System Admin</p>
-            </div>
-        </div>
-        <!-- </div> -->
-        <div class="animated-block">
-            <div class="box-container">
-                <div class="single-box">
-                    <img src="assets/images/council_members/websecy_karthick.jpg" alt="Web Secretary">
-                </div>
-                <div class="text-box">
-                    <h3>Karthick Narayanan</h3>
-                    <p>Web Secretary</p>
-                </div>
-            </div>
-            <div class="box-container">
-                <div class="single-box">
-                    <img src="assets/images/council_members/cherryboi.jpg" alt="Web Secretary">
-                </div>
-                <div class="text-box">
-                    <h3>Cherish</h3>
-                    <p>Web Secretary</p>
-                </div>
+                <h3>Aditya Vyas</h3>
+                <p>Mess Secretary</p>
             </div>
         </div>
 
-        <div class="head-line">
-            <h2>Maintenance Council</h2>
+    </div>
+    <div class="box-container">
+        <div class="single-box">
+            <img src="assets/images/council_members/messsecy_sourav.jpg" alt="Mess Secretary">
         </div>
+        <div class="text-box">
+            <h3>Sourav</h3>
+            <p>Mess Secretary</p>
+        </div>
+    </div>
+
+
+    <div class="head-line">
+        <h2>Sports Council</h2>
+    </div>
+    <div class="box-container">
+        <div class="single-box">
+            <img src="assets/images/council_members/sportco_parag.jpg" alt="Sports Councillor">
+        </div>
+        <div class="text-box">
+            <h3>Parag Ingle</h3>
+            <p>Sports Councillor</p>
+        </div>
+    </div>
+    <div class="animated-block">
         <div class="box-container">
             <div class="single-box">
-                <img src="assets/images/council_members/maintco_sujeet.jpg" alt="Maintenance Councillor">
+                <img src="assets/images/council_members/sportsecy_priyanshu.jpg" alt="Sports Secretary">
             </div>
             <div class="text-box">
-                <h3>Sujeet Mehta</h3>
-                <p>Maintenance Councillor</p>
-            </div>
-        </div>
-        <div class="animated-block">
-            <div class="box-container">
-                <div class="single-box">
-                    <img src="assets/images/council_members/maintsecy_abhay.jpg" alt="Maintenance Secretary">
-                </div>
-                <div class="text-box">
-                    <h3>Abhay Pratap Singh</h3>
-                    <p>Maintenance Secretary</p>
-                </div>
+                <h3>Priyanshu Chaturvedi</h3>
+                <p>Sports Secretary</p>
             </div>
         </div>
 
-        <div class="head-line">
-            <h2>Mess Council</h2>
+
+
+    </div>
+    <div class="box-container">
+        <div class="single-box">
+            <img src="assets/images/council_members/sportsecy_harish.jpg" alt="Sports Secretary">
         </div>
+        <div class="text-box">
+            <h3>Harish chand</h3>
+            <p>Sports Secretary</p>
+        </div>
+    </div>
+    <div class="box-container">
+        <div class="single-box">
+            <img src="assets/images/council_members/sportsecy_shubham.png" alt="Sports Secretary">
+        </div>
+        <div class="text-box">
+            <h3>Shubham Garg</h3>
+            <p>Sports Secretary</p>
+        </div>
+    </div>
+    <div class="box-container">
+        <div class="single-box">
+            <img src="assets/images/council_members/sportsecy_anurag.jpg" alt="Sports Secretary">
+        </div>
+        <div class="text-box">
+            <h3>Anurag Yadav</h3>
+            <p>Sports Secretary</p>
+        </div>
+    </div>
+
+
+    <div class="head-line">
+        <h2>Tech Council</h2>
+    </div>
+    <div class="box-container">
+        <div class="single-box">
+            <img src="assets/images/council_members/messco_ramnarayan.jpg2" alt="Tech Councillor">
+        </div>
+        <div class="text-box">
+            <h3>Hanish</h3>
+            <p>Tech Councillor</p>
+        </div>
+    </div>
+    <div class="animated-block">
         <div class="box-container">
             <div class="single-box">
-                <img src="assets/images/council_members/messco_ramnarayan.jpg" alt="Mess Councillor">
+                <img src="assets/images/council_members/tecchsecy_siddhant.jpeg" alt="Tech Secretary">
             </div>
             <div class="text-box">
-                <h3>Ramnarayan</h3>
-                <p>Mess Councillor</p>
-            </div>
-        </div>
-        <div class="animated-block">
-            <div class="box-container">
-                <div class="single-box">
-                    <img src="assets/images/council_members/messsecy_aditya.jpeg" alt="Mess Secretary">
-                </div>
-                <div class="text-box">
-                    <h3>Aditya Vyas</h3>
-                    <p>Mess Secretary</p>
-                </div>
-            </div>
-            <div class="box-container">
-                <div class="single-box">
-                    <img src="assets/images/council_members/messsecy_sourav.jpg" alt="Mess Secretary">
-                </div>
-                <div class="text-box">
-                    <h3>Sourav</h3>
-                    <p>Mess Secretary</p>
-                </div>
+                <h3>Siddhant Sapkal</h3>
+                <p>Tech Secretary</p>
             </div>
         </div>
 
 
-        <div class="head-line">
-            <h2>Sports Council</h2>
+    </div>
+    <div class="box-container">
+        <div class="single-box">
+            <img src="assets/images/council_members/techsecy_nihir.jpeg" alt="Tech Secretary">
         </div>
+        <div class="text-box">
+            <h3>Nihir Shah</h3>
+            <p>Tech Secretary</p>
+        </div>
+    </div>
+    <div class="box-container">
+        <div class="single-box">
+            <img src="assets/images/council_members/techsecy_samarth.jpg" alt="Tech Secretary">
+        </div>
+        <div class="text-box">
+            <h3>Samarth Sirsat</h3>
+            <p>Tech Secretary</p>
+        </div>
+    </div>
+
+    <div class="head-line">
+        <h2>Hostel Alumni Council</h2>
+    </div>
+    <div class="animated-block">
         <div class="box-container">
             <div class="single-box">
-                <img src="assets/images/council_members/sportco_parag.jpg" alt="Sports Councillor">
+                <img src="assets/images/council_members/alumsec_aditya.jpg" alt="Hostel Alumni Secretary">
             </div>
             <div class="text-box">
-                <h3>Parag Ingle</h3>
-                <p>Sports Councillor</p>
+                <h3>Aditya Aryan</h3>
+                <p>Hostel Alumni Secretary</p>
             </div>
         </div>
-        <div class="animated-block">
-            <div class="box-container">
-                <div class="single-box">
-                    <img src="assets/images/council_members/sportsecy_priyanshu.jpg" alt="Sports Secretary">
-                </div>
-                <div class="text-box">
-                    <h3>Priyanshu Chaturvedi</h3>
-                    <p>Sports Secretary</p>
-                </div>
-            </div>
-            <div class="box-container">
-                <div class="single-box">
-                    <img src="assets/images/council_members/sportsecy_harish.jpg" alt="Sports Secretary">
-                </div>
-                <div class="text-box">
-                    <h3>Harish chand</h3>
-                    <p>Sports Secretary</p>
-                </div>
-            </div>
-            <div class="box-container">
-                <div class="single-box">
-                    <img src="assets/images/council_members/sportsecy_anurag.jpg" alt="Sports Secretary">
-                </div>
-                <div class="text-box">
-                    <h3>Anurag Yadav</h3>
-                    <p>Sports Secretary</p>
-                </div>
-            </div>
-            <div class="box-container">
-                <div class="single-box">
-                    <img src="assets/images/council_members/sportsecy_shubham.png" alt="Sports Secretary">
-                </div>
-                <div class="text-box">
-                    <h3>Shubham Garg</h3>
-                    <p>Sports Secretary</p>
-                </div>
-            </div>
-        </div>
+    </div>
 
+</main>
 
-        <div class="head-line">
-            <h2>Tech Council</h2>
-        </div>
-        <div class="box-container">
-            <div class="single-box">
-                <img src="assets/images/council_members/messco_ramnarayan.jpg2" alt="Tech Councillor">
-            </div>
-            <div class="text-box">
-                <h3>Hanish</h3>
-                <p>Tech Councillor</p>
-            </div>
-        </div>
-        <div class="animated-block">
-            <div class="box-container">
-                <div class="single-box">
-                    <img src="assets/images/council_members/tecchsecy_siddhant.jpeg" alt="Tech Secretary">
-                </div>
-                <div class="text-box">
-                    <h3>Siddhant Sapkal</h3>
-                    <p>Tech Secretary</p>
-                </div>
-            </div>
-            <div class="box-container">
-                <div class="single-box">
-                    <img src="assets/images/council_members/techsecy_samarth.jpg" alt="Tech Secretary">
-                </div>
-                <div class="text-box">
-                    <h3>Samarth Sirsat</h3>
-                    <p>Tech Secretary</p>
-                </div>
-            </div>
-            <div class="box-container">
-                <div class="single-box">
-                    <img src="assets/images/council_members/techsecy_nihir.jpeg" alt="Tech Secretary">
-                </div>
-                <div class="text-box">
-                    <h3>Nihir Shah</h3>
-                    <p>Tech Secretary</p>
-                </div>
-            </div>
-        </div>
+<!-- Slick Carousel JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-        <div class="head-line">
-            <h2>Hostel Alumni Council</h2>
-        </div>
-        <div class="animated-block">
-            <div class="box-container">
-                <div class="single-box">
-                    <img src="assets/images/council_members/alumsec_aditya.jpg" alt="Hostel Alumni Secretary">
-                </div>
-                <div class="text-box">
-                    <h3>Aditya Aryan</h3>
-                    <p>Hostel Alumni Secretary</p>
-                </div>
-            </div>
-        </div>
+<script>
+    // Initialize the carousel
+    $(document).ready(function () {
+        // Set autoplay interval (e.g., every 3 seconds)
+        var autoplayInterval = 3000; // in milliseconds
 
-    </main>
+        // Function to move to the next slide
+        function moveToNextSlide() {
+            $('.carousel').slick('slickNext');
+        }
 
-    <!-- Slick Carousel JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        // Start autoplay
+        setInterval(moveToNextSlide, autoplayInterval);
+    });
 
-    <script>
-        // Initialize the carousel
-        $(document).ready(function () {
-            // Set autoplay interval (e.g., every 3 seconds)
-            var autoplayInterval = 3000; // in milliseconds
-
-            // Function to move to the next slide
-            function moveToNextSlide() {
-                $('.carousel').slick('slickNext');
-            }
-
-            // Start autoplay
-            setInterval(moveToNextSlide, autoplayInterval);
+    // Initialize the carousel
+    $(document).ready(function () {
+        $('.carousel').slick({
+            dots: true, // Add navigation dots
+            infinite: true, // Infinite loop sliding
+            speed: 1000, // Transition speed in milliseconds
+            slidesToShow: 1, // Number of slides to show at a time
+            adaptiveHeight: true, // Auto-detect height for the current slide
+            prevArrow: null, // Remove the "previous" button
+            nextArrow: null
         });
-
-        // Initialize the carousel
-        $(document).ready(function () {
-            $('.carousel').slick({
-                dots: true, // Add navigation dots
-                infinite: true, // Infinite loop sliding
-                speed: 1000, // Transition speed in milliseconds
-                slidesToShow: 1, // Number of slides to show at a time
-                adaptiveHeight: true, // Auto-detect height for the current slide
-                prevArrow: null // Remove the "previous" button
-            });
-        });
-    </script>
-
+    });
+</script>
+<hr>
+<div class="footer">
+    Made with ❤️ by Web Council, Hostel-2
+</div>
 </body>
 
 </html>
